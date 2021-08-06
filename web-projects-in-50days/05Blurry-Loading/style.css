@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("back.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right top;
+    filter: blur(30px);
+}
+
+.progress{
+    position: fixed;
+    top: calc(50% - 50px);
+    left: calc(50% - 100px);
+    width: 200px;
+    height: 100px;
+    /*background-color: #333333;*/
+    color: white;
+    line-height: 100px;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 10px;
+}
