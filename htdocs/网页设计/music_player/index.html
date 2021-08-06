@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>音乐播放</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            border: 0;
+
+        }
+        div{
+            width: 300px;
+            height: 100px;
+            position: relative;
+            background-color: #f1f3f4;
+            margin: 100px 300px;
+            overflow: hidden;
+        }
+        audio{
+            position: absolute;
+            width: 300px;
+            height: 50px;
+            top: 0;
+            left: 0;
+            transform: scale(1,1);
+        }
+        /*.player{*/
+        /*    display: block;*/
+        /*    width: 400px;*/
+        /*    height: 100px;*/
+        /*    background-color: #2c7fbf;*/
+        /*}*/
+    </style>
+</head>
+<body>
+<div>
+    <audio controls="controls" class="player" preload="auto">
+        <source src="music/team.ogg" type="audio/ogg">
+        <source src="music/team.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Icon Ninja - 33350 vector icons and 700081 png icons for free download</title>
+    <meta name="keywords" content="free icons, vector icons, png icons, svg icons, web icons, internet icon, css sprite generator"/>
+    <meta name="description" content="Icon Ninja collects 700081 free icons in 16306 icon sets, including 33350 vector icons and 666731 transparent background png icons, also you can generate icon css sprites online"/>
+    <link rel="shortcut icon" href="https://www.iconninja.com/public/css/favicon.ico" type="image/x-icon" />
+    <link href="https://www.iconninja.com/public/css/base.css?20180317" rel="stylesheet"/>
+    <meta name="theme-color" content="#ffffff">
+    <script data-ad-client="ca-pub-2606419576769320" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body itemscope itemtype="http://schema.org/WebPage" id="portal_body">
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-68216682-8', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <header itemscope itemtype="http://schema.org/WPHeader">
+        <div id="logo">
+            <img alt="Icon Ninja logo" src="https://www.iconninja.com/public/css/logo.png"/>
+        </div>
+    </header>
+    <div id="view_all">
+        <span>≡</span>
+        <a itemprop="significantLink" href="https://www.iconninja.com/icon">
+            <strong>VIEW ALL ICONS</strong>
+        </a>
+    </div>
+    <main itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/WebPageElement" id="portal_bg">
+        <div itemscope itemtype="http://schema.org/WebSite" id="search">
+            <link itemprop="url" href="https://www.iconninja.com"/>
+            <form itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction" id="portal_search" onsubmit="return false;">
+                <meta itemprop="target" content="https://www.iconninja.com/tag/{query}"/>
+                <input placeholder="input keywords to search in 700081 free icons" itemprop="query-input" type="text" name="query" id="search_input"/>
+                <input type="checkbox" name="isSvg" id="isSvg" title="only show svg icons"/>
+            </form>
+        </div>
+		<a href="https://www.nextpng.com" target="_blank" id="pickpik">Free PNG clipart download</a>
+    </main>
+    <footer>
+        <canvas id="bgcanvas" height="300"></canvas>
+        <script src="https://www.iconninja.com/public/switchery.min.js"></script>
+        <script>
+            var elem = document.getElementById('isSvg');
+            var init = new Switchery(elem,{
+                size: 'large'
+            });
+            function canvasBezier(a, b) {
+                function c() {
+                    f.clearRect(0, 0, cwidth, cheight);
+                    for (var a = 3; a > 0; a--) {
+                        d[a - 1] += .5 * a;
+                        var c = (d[a - 1] + 120 * a) * Math.PI / 180;
+                        if (b) var e = Math.cos(c) * cheight * .09,
+                            g = Math.sin(c) * cheight * .06;
+                        else var e = Math.sin(c) * cheight * .06,
+                            g = Math.cos(c) * cheight * .09;
+                        f.setTransform(1, 0, 0, 1, 0, 0),
+                            f.strokeStyle = "rgba(" + bezierColor + (.2 * Math.cos(c) + .5) + ")",
+                            f.beginPath(),
+                            f.moveTo(0, .5 * cheight + e),
+                            f.bezierCurveTo(cwidth / 2, .5 * cheight + 2.5 * e, cwidth / 2, .5 * cheight + 2 * g, cwidth, .5 * cheight + g),
+                            f.stroke()
+                    }
+                }
+                var d = [0, 0, 0],
+                    e = document.getElementById(a),
+                    f = e.getContext("2d");
+                cwidth = document.body.clientWidth >= 1130 ? document.body.clientWidth : 1130,
+                    cheight = document.body.clientHeight,
+                    e.width = cwidth,
+                    e.height = cheight,
+                    f.lineWidth = .5,
+                    e.timer = setInterval(c, 30),
+                    window.addEventListener("resize", function(){
+                        clearInterval(e.timer),
+                            cwidth = document.body.clientWidth >= 1130 ? document.body.clientWidth : 1130,
+                            cheight = document.body.clientHeight,
+                            e.width = cwidth,
+                            e.height = cheight,
+                            f.lineWidth = 1,
+                            e.timer = setInterval(c, 30)
+                    }, true)
+            }
+            var bezierColor = "150,150,150,"
+            canvasBezier("bgcanvas", 0);
+            document.getElementById('portal_search').addEventListener('submit',function () {
+                var value=document.getElementById('search_input').value.toLowerCase();
+                value=value.replace('icon sets','').replace('icons','').replace('icon','').replace(/[^\w\s]|_/g, " ").replace(/\s+/g, " ");
+                var value_arr=value.split(' ').filter(function(e){return e});
+                value=value_arr.join('-');
+                if(document.getElementById('isSvg').checked){
+                    location.href='https://www.iconninja.com/tag/'+value+'-vector-icon';
+                }else{
+                    location.href='https://www.iconninja.com/tag/'+value+'-icon';
+                }
+            });
+        </script>
+    </footer>
+</body>
+</html>

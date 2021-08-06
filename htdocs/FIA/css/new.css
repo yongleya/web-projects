@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: 0;
+    list-style: none;
+}
+
+body{
+    background-color: white;
+}
+
+#all{
+    width: 1200px;
+    height: 4000px;
+    margin: 0 auto;
+    /*outline: 1px solid green;*/
+}
+
+#top{
+    width: 1200px;
+    background-color: white;
+    height: 250px;
+
+    /*position: relative;*/
+}
+#top>a>img{
+    width: 1000px;
+
+    float: right;
+}
+
+#middle{
+    width: 1200px;
+    background-color: white;
+    height: 2000px;
+}
+
+#xueqi{
+    position: relative;
+    width: 1200px;
+    height: 500px;
+}
+#xueqi>ul{
+    width: 1200px;
+    height: 50px;
+    background-color: #bbbbbb;
+}
+.t{
+    display: inline-block;
+    float: left;
+    width: 150px;
+    height: 50px;
+    font-size: 26px;
+    line-height: 50px;
+    text-align: center;
+    /*font-weight: bold;*/
+    font-family: '微软雅黑','宋体';
+    color: #6e6b6e;
+    cursor: pointer;
+}
+
+.content{
+    position: absolute;
+    /*display: none;*/
+    top: 70px;
+    left: 0;
+    width: 1200px;
+    height: 800px;
+}
+.subject{
+
+}
+.content .subject{
+    width: 200px;
+    height: 800px;
+    box-shadow: 0 0 2px 1px #bbbbbb;
+    float: left;
+}
+.focus_t{
+    color: white;
+    background-color: #373737;
+}
+
+.focus_r{
+    background-color: #c33240;
+    color: white;
+}
+.content .subject ul li.r{
+    width: 200px;
+    height: 30px;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: '微软雅黑','宋体';
+    text-align: center;
+    cursor: default;
+}
+
+.content .subject ul li:first-child{
+    background-color: #c4cedc;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 10px;
+    color: #909090;
+}
+
+.content .files{
+    float: left;
+    margin: 0 50px;
+    width: 700px;
+    height: 800px;
+}
+
+.content .files .title{
+    display: inline-block;
+    font-size: 30px;
+    font-family: '微软雅黑', '宋体';
+    color: #6e6b6e;
+    margin: 0 auto 20px;
+}
+
+.content .files ul li a{
+    text-decoration: none;
+
+}
+
+
+
+.t:hover{
+    color: white;
+    background-color: #373737;
+}
+.r:hover{
+    background-color: #c33240;
+    color: white;
+}
+
+.show{display: block}
+.nshow{display: none}
+
+#bottom{
+    position: fixed;
+    top: 100px;
+    left: -180px;
+    width: 200px;
+    height: 70px;
+    padding-top: 10px;
+    font-size: 14px;
+
+    color: #bb5460;
+    cursor: pointer;
+    transition: left 0.5s ease;
+    border-radius: 5px;
+    background-color: #7fff43;
+}
+
+#bottom:hover{
+    background-color: #bb5460;
+    color: white;
+    left: -10px;
+}
+#conn_us{
+    width: 200px;
+    height: 70px;
+    writing-mode: vertical-rl;
+}

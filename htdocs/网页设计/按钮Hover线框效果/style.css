@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "PingFang SC";
+
+}
+.container{
+    /*position: relative;*/
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #2f3542;
+    z-index: 1;
+    user-select: none;
+}
+.btn-wraper{
+    position: relative;
+    width: 240px;
+    height: 60px;
+    text-align: center;
+    z-index: 2;
+
+}
+.btn{
+    position: relative;
+    top: -40px;
+    color: white;
+    z-index: 1;
+}
+.wrap{
+    fill: transparent;
+    stroke: #ff875c;
+    stroke-width: 7px;
+    stroke-dasharray:100 500;
+    stroke-dashoffset: -370;
+    stroke-linecap: square;
+    stroke-miterlimit: 100px;
+    /*transform-origin: 50% 50%;*/
+    /*transform: rotateZ(45deg);*/
+    string-set: none;
+
+
+}
+.btn-wraper:hover .wrap{
+    animation: forwards extend 0.3s linear;
+}
+.btn-wraper:hover{
+    animation: shadow 0.2s ease forwards;
+    animation-delay: 0.2s;
+}
+
+@keyframes extend {
+    to{
+        stroke-width: 1px;
+        stroke-dasharray: 600;
+        stroke-dashoffset: 0;
+        box-shadow: 0 0 4px #ff875c;
+    }
+}
+@keyframes shadow {
+    to{
+        box-shadow: 0 0 4px #ff875c;
+    }
+    /*to{*/
+    /*    box-shadow: 0 0 4px white;*/
+    /*}*/
+
+}
+.title{
+    position: relative;
+    top: -200px;
+}
+.text{
+    /*color: #00d1ff;*/
+    font-size: 40px;
+    stroke:  #00d1ff;
+    stroke-dasharray: 0 300;
+    stroke-dashoffset: 0;
+    fill: #ff0099;
+}
+.title:hover .text{
+    animation: draw-title 1s linear forwards;
+
+}
+@keyframes draw-title {
+    to{
+        stroke-dasharray: 300;
+        stroke-dashoffset: 0;
+    }
+}

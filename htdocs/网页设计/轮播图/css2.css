@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.container{
+    position: relative;
+    width: 800px;
+    height: 450px;
+    margin: 100px auto;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px #999999;
+}
+
+.img{
+    position: absolute;
+    display: block;
+    width: 800px;
+    height: 450px;
+    transition: opacity 1s ease-in-out;
+}
+.img img{
+    width: 800px;
+    height: 450px;
+}
+
+.image{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: none;
+}
+
+.dots{
+    position: absolute;
+    display: flex;
+    width: 120px;
+    height: 20px;
+    left: calc(50% - 60px);
+    bottom: 40px;
+    z-index: 100;
+    background-color: rgba(255,255,255,0.3);
+    flex-direction: row;
+    align-items: center;
+    border-radius: 50vh;
+}
+.dot{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: white;
+}
+.active{
+    background-color: #00cf68;
+}
+.style_btn{
+    position: absolute;
+    width: 60px;
+    height: 20px;
+    top: 20px;
+    left: calc(50% - 20px);
+    letter-spacing: 2px;
+    font-size: 10px;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    line-height: 20px;
+    text-align: center;
+    opacity: 0.5;
+    transition: opacity 0.3 ease-in-out;
+    cursor: default;
+}
+.style_btn:hover{
+    opacity: 1;
+    box-shadow: 0 0 2px 2px white;
+}
+
+#next,#prev{
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 40px;
+    top: calc(50% - 40px);
+    transform: translateZ(-800px) scaleY(1.5);
+    background-color: rgba(0,0,0,0.3);
+    color: white;
+    line-height: 38px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 100%;
+    user-select: none;
+}
+#next{
+    right: 0;
+
+}
+#prev{
+    left: 0;
+}
+#next:hover, #prev:hover{
+    /*background-color: rgba(255,255,255,0.3);*/
+    /*color: black;   */
+    box-shadow: 0 0 3px 3px white;
+    cursor: default;
+}
+@media screen and (max-width:800px){
+    .container{
+        /*transform: rotateZ(90deg);*/
+    }
+}

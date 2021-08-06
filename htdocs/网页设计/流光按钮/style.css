@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    align-items: center;
+    justify-content: center;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    background: linear-gradient(50deg, rgba(253,29,68,1) 0%, rgba(142,58,180,1) 100%);
+    border-radius: 25px;
+    box-shadow: 0 0 2px 2px rgba(255,255,255,0.2) inset;
+    transition: 0.5s;
+}
+.button:hover{
+    box-shadow: 0 0 4px 4px rgba(255,255,255,0.5) inset;
+    animation: daz 0.5s infinite;
+}
+@keyframes daz {
+    0%{
+        background: linear-gradient(50deg, rgba(253,29,68,1) 0%, rgba(142,58,180,1) 100%);
+    }
+    50%{
+        background: linear-gradient(50deg,rgba(142,58,180,1)  0%, rgba(253,29,68,1) 100%);
+    }
+    100%{
+        background: linear-gradient(50deg, rgba(253,29,68,1) 0%, rgba(142,58,180,1) 100%);
+    }
+}

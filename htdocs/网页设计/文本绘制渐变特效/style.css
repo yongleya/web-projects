@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    /*color: ;*/
+    display: flex;
+    width: 100vm;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: #303442;
+    flex-direction: column;
+}
+.logo-text{
+    /*color: ;*/
+    font-family: "PingFang SC", "Microsoft YaHei UI";
+    font-size: 90px;
+    fill: none;
+    stroke: url("#gradientColor");
+    stroke-width: 1px;
+    stroke-dasharray: 10 800;
+    stroke-dashoffset: 0;
+    /*transition: 1s ease;*/
+    animation: 2s linear drawing 0s forwards;
+}
+.logo-text1{
+    font-size: 40px;
+    font-weight: bold;
+    fill-opacity: 0.2;
+    fill: none;
+    stroke: url("#color1");
+    stroke-width: 1px;
+    stroke-dasharray: 10 800;
+    stroke-dashoffset: 10;
+    letter-spacing: 10px;
+    animation: 2s drawing forwards;
+}
+
+
+
+
+
+@keyframes drawing {
+    to{
+        stroke-dasharray: 800;
+        stroke-dashoffset: 0;
+    }
+}

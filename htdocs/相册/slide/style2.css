@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.frame{
+    width: 800px;
+    height: 450px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: row;
+}

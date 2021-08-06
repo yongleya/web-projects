@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 50px;
+    background-color: #2d2d2d;
+}
+header>.wrapper{
+    width: 1100px;
+    height: 50px;
+}
+header>.wrapper>ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+header>.wrapper>ul>li{
+    display: inline-block;
+    width: 140px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    text-align: center;
+}
+header>.wrapper>ul>li:first-child{
+    width: 100px;
+}
+header li a {
+    display: inline-block;
+    width: inherit;
+    height: inherit;
+    color: white;
+    font-family: '微软雅黑', '宋体';
+}
+header li:hover{
+    background-color: #494949;
+}

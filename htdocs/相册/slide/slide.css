@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.frame {
+    position: relative;
+    width: 800px;
+    height: 450px;
+    margin: 100px auto;
+    overflow-x: hidden;
+    border-radius: 10px;
+}
+
+.dot {
+    position: absolute;
+    display: block;
+    width: 156px;
+    height: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    bottom: 30px;
+    left: 300px;
+
+}
+
+.pos {
+    display: inline-block;
+    float: left;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: wheat;
+    margin: 5px 8px;
+
+}
+
+.focus {
+    background-color: #ff8200;
+}
+
+.image {
+    display: inline-block;
+    width: 5600px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*animation: move 18s linear infinite;*/
+    /*background: #2c7fbf;*/
+}
+
+.to {
+    transition: all 0.5s ease;
+    /*left: -800px;*/
+}
+
+.img {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    width: 800px;
+    height: 450px;
+}
+@keyframes move {
+    from{
+        left: 0;
+    }
+    to{
+        left: -4800px;
+    }
+
+}

@@ -1,0 +1,73 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: '微软雅黑', '宋体';
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+    transform-style: inherit;
+}
+header h1{
+    background: rgba(0, 0,0,0.8);
+    color: white;
+    font-size: 3em;
+    letter-spacing: 0.1em;
+
+    padding: 1em 4em;
+}
+header::before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /*right: 0;*/
+    /*bottom: 0;*/
+    width: 100%;
+    height: 100%;
+    background: url("https://yl153977.oss-cn-hangzhou.aliyuncs.com/Image/7.jpg");
+    background-size: cover;
+    z-index: -10;
+
+    transform: translateZ(-1px) scale(2.02);
+
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    background: #000033;
+    z-index: 10;
+    transform: translateZ(0.01px);
+
+}
+article{
+    width: 90vw;
+    max-width: 1000px;
+    padding: 6em 0;
+    color: white;
+
+
+    font-size: 18px;
+    text-align: justify;
+    letter-spacing: 0.1em;
+    line-height: 1.8em;
+}
+html{
+    overflow: hidden;
+}
+body{
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100vh;
+    /*开启3D空间*/
+    perspective: 1px;
+    transform-style: preserve-3d;
+}

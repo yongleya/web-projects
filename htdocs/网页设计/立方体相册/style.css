@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+.container{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: #73737e;
+    perspective: 1500px;
+    overflow: paged-y;
+}
+.container ul{
+    display: block;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: #6c5368;
+    transform-style: preserve-3d;
+    animation: rote 10s linear infinite;
+    /*transform: rotateY(-70deg) rotateZ(70deg) rotateX(-70deg);*/
+
+
+
+
+}
+.container ul li{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: absolute;
+
+    /*opacity: 0.4;*/
+
+}
+li img{
+    /*width: 400px;*/
+    height: 300px;
+    min-width: 80%;
+}
+.container li:nth-child(1){
+    transform: translateZ(-150px);
+}
+.container li:nth-child(2){
+    transform: rotateY(90deg) translateZ(-150px);
+}
+
+.container li:nth-child(3){
+    transform: rotateY(180deg) translateZ(-150px);
+}
+
+.container li:nth-child(4){
+    transform: rotateY(-90deg) translateZ(-150px);
+}
+
+.container li:nth-child(5){
+    transform: rotateX(90deg) translateZ(-150px);
+}
+
+.container li:nth-child(6){
+    transform: rotateX(-90deg) translateZ(-150px);
+}
+@keyframes rote {
+    0%{
+        transform: rotateX(0) rotateY(0);    }
+    20%{
+        /*右*/
+        transform: rotateY(-90deg);    }
+    40%{
+        /*上*/
+        transform: rotateX(-90deg);    }
+    60%{
+        /*左*/
+        transform: rotateY(90deg);    }
+
+    80%{
+        /*下*/
+        transform: rotateX(90deg);    }
+
+
+    100%{
+
+        transform: rotateX(0) rotateY(0)}
+
+
+}

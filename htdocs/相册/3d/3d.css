@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+}
+
+body {
+    /*height: 1500px;*/
+    perspective: 1800px;
+    overflow: paged-y;
+}
+
+.style {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    left: 0;
+    background-color: #0b0b0b;
+}
+
+.box {
+    /*background-color: #0b0b0b;*/
+    width: 300px;
+    height: 300px;
+    margin: 200px auto;
+    transition: 2s;
+    transform-style: preserve-3d;
+    animation: move 5s linear infinite;
+    position: relative;
+    /*transform: rotateY(45deg) rotateX(45deg);*/
+}
+
+.min {
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    left: 100px;
+}
+
+.min .close {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 0;
+    background-color: red;
+}
+
+.min .close:nth-child(1) {
+    background: url("photos/01.jpg");
+    transform: translateZ(50px);
+}
+
+.min .close:nth-child(2) {
+    background: url("photos/02.jpg");
+    transform: translateZ(-50px);
+}
+
+.min .close:nth-child(3) {
+    background: url("photos/03.jpg");
+    transform: rotateY(90deg) translateZ(50px);
+}
+
+.min .close:nth-child(4) {
+    background: url("photos/04.jpg");
+    transform: rotateY(90deg) translateZ(-50px);
+}
+
+.min .close:nth-child(5) {
+    background: url("photos/05.jpg");
+    transform: rotateX(90deg) translateZ(50px);
+}
+
+.min .close:nth-child(6) {
+    background: url("photos/06.jpg");
+    transform: rotateX(90deg) translateZ(-50px);
+}
+
+.max {
+    display: block;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 0;
+    left: 0;
+}
+
+.max .close {
+    position: absolute;
+    display: block;
+    width: 300px;
+    height: 300px;
+    top: 0;
+    left: 0;
+    opacity: 0.05;
+    font-size: 20px;
+    line-height: 300px;
+    text-align: center;
+    transition: 1s;
+    border-radius: 5px;
+}
+
+.max .close:nth-child(1) {
+    background: url("photos/1.jpg");
+    transform: translateY(90px) translateZ(60px);
+}
+
+.max .close:nth-child(2) {
+    background: url("photos/2.jpg");
+    transform: translateY(-90px) translateZ(-60px);
+}
+
+.max .close:nth-child(3) {
+    background: url("photos/3.jpg");
+    transform: rotateY(90deg) translateZ(60px) translateY(90px) translateX(-90px);
+}
+
+.max .close:nth-child(4) {
+    background: url("photos/4.jpg");
+    transform: rotateY(90deg) translateZ(-60px) translateY(-90px) translateX(90px);
+}
+
+.max .close:nth-child(5) {
+    background: url("photos/5.jpg");
+    transform: rotateX(90deg) translateZ(-60px) translateX(90px) translateY(90px) ;
+}
+
+.max .close:nth-child(6) {
+    background: url("photos/6.jpg");
+    transform: rotateX(90deg) translateZ(60px) translateX(-90px) translateY(-90px);
+}
+
+.max .open{
+    opacity: 1;
+}
+
+.max .open:nth-child(1) {
+    background: url("photos/1.jpg");
+    transform: translateZ(250px);
+}
+
+.max .open:nth-child(2) {
+    background: url("photos/2.jpg");
+    transform: translateZ(-250px);
+}
+
+.max .open:nth-child(3) {
+    background: url("photos/3.jpg");
+    transform: rotateY(90deg) translateZ(250px);
+}
+
+.max .open:nth-child(4) {
+    background: url("photos/4.jpg");
+    transform: rotateY(90deg) translateZ(-250px);
+}
+
+.max .open:nth-child(5) {
+    background: url("photos/5.jpg");
+    transform: rotateX(90deg) translateZ(250px);
+}
+
+.max .open:nth-child(6) {
+    background: url("photos/6.jpg");
+    transform: rotateX(90deg) translateZ(-250px);
+}
+
+
+@keyframes move {
+    from {
+        transform: rotateX(15deg) rotateY(0deg);
+    }
+    to {
+        transform: rotateX(15deg) rotateY(360deg);
+    }
+
+}
+
