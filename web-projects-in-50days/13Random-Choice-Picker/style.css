@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: cornflowerblue;
+}
+
+
+.container{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.title{
+    font-family: sans-serif;
+    color: white;
+    font-size: 16px;
+    width: 400px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.input{
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: "PingFang SC",sans-serif;
+    letter-spacing: 2px;
+}
+
+.choices{
+    display: block;
+    width: 400px;
+}
+.li{
+    display: inline-block;
+    float: left;
+    list-style: none;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+    font-size: 14px;
+    margin: 10px;
+    background-color: #f0932b;
+    color: white;
+    border-radius: 15px;
+}
+.high{
+    background-color: #00ae45;
+}
