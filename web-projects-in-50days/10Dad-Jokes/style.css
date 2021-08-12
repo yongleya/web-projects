@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #686de0;
+    font-family: "PingFang SC",sans-serif;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 1000px;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 3px rgba(0,0,0,0.4);
+}
+
+h3{
+   color: #807984;
+}
+
+.joke{
+    font-family: sans-serif;
+    font-size: 30px;
+    max-width: 750px;
+    padding: 20px;
+}
+
+.joke-btn{
+    width: 200px;
+    height: 60px;
+    border: none;
+    border-radius: 30px;
+    background-color: #9f68e0;
+    box-shadow: 1px 4px 4px rgba(0,0,0,0.1);
+    color: #fff;
+    font-family: "PingFang SC",sans-serif;
+}
+.joke-btn:active{
+    transform: scale(0.98);
+}
