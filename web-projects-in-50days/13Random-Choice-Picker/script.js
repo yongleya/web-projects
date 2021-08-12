@@ -32,8 +32,8 @@ function random_select() {
         return Math.floor(Math.random()*(b-a)+a)
     }
     function selecting() {
-        var i=0
-        var t=setInterval(function () {
+        let i=0
+        let t=setInterval(function () {
             for (let j = 0; j < tags.length; j++) {
                 tags[j].classList.remove('high')
             }
