@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #8e44ad;
+    padding: 20px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+    height: 200px;
+    /*background-color: #5b96fa;*/
+}
+
+.social-item{
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    /*background-color: #00cf68;*/
+    position: relative;
+}
+
+.social-item::before{
+    content: "";
+    width: 40px;
+    height: 40px;
+    /*background-color: #5C5C5C;*/
+    position: absolute;
+    left: calc(50% - 20px);
+    top: -60px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.social-item::after{
+    content: "social item";
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    /*background-color: #ad474e;*/
+    left: 0;
+    top: 60px;
+    color: white;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: "PingFang SC", sans-serif;
+}
+
+.twitter::before{
+    background-image: url("icons/twitter.svg");
+}
+.youtube::before{
+    background-image: url("icons/youtube.svg");
+}
+.facebook::before{
+    background-image: url("icons/facebook.svg");
+}
+
+.social-item:hover::before{
+    filter: drop-shadow(0 0 3px white);
+}
+
+.twitter::after{
+    content: "Twitter Followers";
+}
+.youtube::after{
+    content: "YouTube Subscribers";
+}
+.facebook::after{
+    content: "Facebook Fans";
+}

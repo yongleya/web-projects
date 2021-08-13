@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    user-select: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+body::before, body::after{
+    content: "";
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+body::before{
+    top: 0;
+    background-color: #eafbff;
+}
+body::after{
+    top: 50%;
+    background-color: #5290f9;
+}
+
+.container{
+    height: 60px;
+    width: 350px;
+    background-color: white;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 2px rgba(0,0,0,0.2);
+    overflow: hidden;
+    transition: width ease 0.5s;
+}
+
+.container .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    width: 290px;
+    height: 60px;
+    /*border: 1px solid #0ccdf8;*/
+    overflow: hidden;
+    transition: width ease 0.5s;
+}
+
+.container .nav a{
+    color: #29262a;
+    font-family: "PingFang SC";
+    font-weight: 510;
+    font-size: 15px;
+}
+
+.container button{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+.container button::before{
+    content: "";
+    height: 2px;
+    width: 20px;
+    background-color: #5b96fa;
+    position: absolute;
+    left: 0;
+    top: 9px;
+    transform: rotate(-45deg);
+    transition: all linear 0.5s;
+}
+.container button::after{
+    content: "";
+    height: 2px;
+    width: 20px;
+    background-color: #5b96fa;
+    position: absolute;
+    left: 0;
+    top: 9px;
+    transform: rotate(45deg);
+    transition: all linear 0.5s;
+}
+
+.close{
+    width: 60px;
+}
+
+.close .nav{
+    width: 0;
+    pointer-events: none;
+}
+
+.close button::before{
+    transform: rotate(-720deg);
+    top: 4px;
+}
+
+.close button::after{
+    transform: rotate(720deg);
+    top: 14px;
+}
